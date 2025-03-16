@@ -1,0 +1,5 @@
+#!/bin/sh -e
+#help: Build "MS Windows", GNU/Linux (glibc, musl)
+hcross -t x86_64-w64-mingw32 hgmake clean all BUILDDIR=/tmp/trash
+hcross -t x86_64-linux-gnu   hgmake clean all BUILDDIR=/tmp/trash
+hcross -t x86_64-linux-musl  hgmake clean all BUILDDIR=/tmp/trash
