@@ -52,6 +52,7 @@ int         log_priority =
 #  endif
     ;
 #else
+extern THREAD_LOCAL char log_error[1024];
 extern char const *log_program_name;
 extern FILE       *log_file;
 extern int         log_priority;
